@@ -1,0 +1,16 @@
+<template name="main">
+  {{> yield 'header'}}
+  {{> yield}}
+  {{> yield 'footer'}}
+</template>
+
+<template name="main.header">
+    <h1>Header</h1>
+    <hr />
+</template>
+
+<template name="main.footer">
+    <hr />
+    <a href="{{path}}">{{desc}}</a>
+    <h1>footer</h1>
+</template>

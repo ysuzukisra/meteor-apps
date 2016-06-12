@@ -1,0 +1,54 @@
+<template name="testIsotope">
+    <div class="grid" >
+        <div class="grid-item">
+          グリッド１１
+        </div>
+        <div class="grid-item grid-item--width2">
+          グリッド１２ｗ
+        </div>
+        <div class="grid-item">
+          グリッド１３
+        </div>
+        <div class="grid-item">
+          グリッド２１
+        </div>
+        <div class="grid-item">
+          グリッド２２
+        </div>
+        <div class="grid-item">
+          グリッド２３
+        </div>
+        <div class="grid-item">
+          グリッド２４
+        </div>
+    </div>
+    <script type="text/javascript">
+      $(function() {
+        console.log("ENBED begin isotope onRendered");
+        var iso = new Isotope( '.grid', {
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            layoutMode: 'fitRows',
+            // masonry: {
+            //     columnWidth: '.grid-sizer',
+            // },  
+        });
+        $('.grid-item').resizable({
+            autoHide: true,
+            animate: true,
+            animateDuration: "fast",
+            cancel: true,
+            ghost: true,
+            minWidth: 30,
+            minHeight: 30,
+            stop: function(event, ui) {
+                console.log("begin esize");
+                $('.grid').isotope().isotope('layout');
+                console.log("end   esize");
+            },
+        })
+        $('.grid').isotope().isotope('layout');
+        console.log("ENBED end   isotope onRendered");
+      })
+    </script>
+</template>
