@@ -8,5 +8,6 @@ meteor add compstak:handsontable
 meteor add mizzao:jquery-ui
 // meteor add mrt:iconv             // 動かない？
 // meteor add gbhrdt:iconv-lite     // 動かない？
+meteor add reactive-var
 
 npm install -g mongo-express
