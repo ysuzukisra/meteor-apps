@@ -2,12 +2,12 @@ curl https://install.meteor.com/ | sh
 
 meteor add iron:router
 meteor add isotope:isotope
-meteor add huaming:js-xlsx
+// meteor add huaming:js-xlsx
 meteor add khrone:img-qrcode        // 漢字化け。Sjis変換が必要？
-meteor add compstak:handsontable
+// meteor add compstak:handsontable
 meteor add mizzao:jquery-ui
 // meteor add mrt:iconv             // 動かない？
 // meteor add gbhrdt:iconv-lite     // 動かない？
 meteor add reactive-var
 
-npm install -g mongo-express
+// npm install -g mongo-express

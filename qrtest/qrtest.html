@@ -1,10 +1,10 @@
 <template name="qrtest">
     <p>This is qrtest! {{a}}, {{b}}</p>
-    {{#each routes}}
-      <p>{{path}}</p>
-    {{/each}}
+    <textarea id="qrtext" name="qrtext" cols="100" rows="5">{{val}}</textarea>
+    <hr />
     <p>
       {{val}}<br>
-      {{> QrCode text=valSjis size="256" }}
+      {{! > QrCode text=val size=256 }}
+      <div id="qrcode"></div>
     </p>
 </template>
