@@ -1,4 +1,4 @@
-/* global Router */
+/* global Router, $ */
 
 if (Meteor.isClient) {
     Template.qrtest.onCreated(function() {
